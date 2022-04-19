@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-from stud.ner_pretrain_noisycorpus import NERv1_PRE
+from ner_pretrain_noisycorpus import NERv1_PRE
 from vocabulary import Vocabulary
 from data_loading import *
 from tqdm import tqdm

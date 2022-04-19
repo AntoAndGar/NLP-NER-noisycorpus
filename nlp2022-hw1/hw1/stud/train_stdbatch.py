@@ -3,7 +3,7 @@ import torch.nn as nn
 import numpy as np
 
 from data_loading import *
-from stud.ner_pretrain_stdbatch import NERv2
+from ner_pretrain_stdbatch import NERv2
 from vocabulary import Vocabulary
 from data_loading import *
 from tqdm import tqdm

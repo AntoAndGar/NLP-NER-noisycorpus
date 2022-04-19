@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import itertools
 from rich.progress import track
 from vocabulary import Vocabulary
-from stud.ner_pretrain_stdbatch import NERv2
+from ner_pretrain_stdbatch import NERv2
 from gensim.models import KeyedVectors
 import torch
 

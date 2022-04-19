@@ -59,11 +59,8 @@ class StudentModel(Model):
         self.num_layers = NUM_LAYERS
         self.bidirectional = BIDIRECTIONAL
         self.num_classes = len(self.tags)
-        #self.model = MixedNet(len(self.vocab), self.emb_size, self.hidden_size, self.num_layers, self.num_classes, self.bidirectional, device)
         #self.model = NERv2(len(self.vocab), self.emb_size, self.hidden_size, self.num_layers, self.num_classes, self.bidirectional, device, self.weights)
-        #self.model = NERv1(len(self.vocab), self.emb_size, self.hidden_size, self.num_layers, self.num_classes, self.bidirectional, device)
         self.model = NERv1_PRE(len(self.vocab), self.emb_size, self.hidden_size, self.num_layers, self.num_classes, self.bidirectional, device)
-        #self.model = GRU(len(self.vocab), self.emb_size, self.hidden_size, self.num_layers, self.num_classes, device)
         print("Model loaded")
 
     def init_weights(self, pretrained = False):
