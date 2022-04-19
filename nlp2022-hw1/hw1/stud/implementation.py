@@ -1,15 +1,13 @@
 import numpy as np
-from typing import List, Tuple
-
-from model import Model
 import torch
-from hw1.stud.ner_pretrain_noisycorpus import NERv1_PRE
-from hw1.stud.ner_pretrain_stdbatch import NERv2
+
+from typing import List, Tuple
+from model import Model
+from stud.ner_pretrain_noisycorpus import NERv1_PRE
+from stud.ner_pretrain_stdbatch import NERv2
 from stud.data_loading import *
 from stud.vocabulary import Vocabulary
 from gensim.models import KeyedVectors
-import numpy as np
-
 from stud.configuration import *
 
 def build_model(device: str) -> Model:

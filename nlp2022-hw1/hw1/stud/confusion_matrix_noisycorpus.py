@@ -6,8 +6,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import itertools
 from rich.progress import track
-from  vocabulary import Vocabulary
-from hw1.stud.ner_pretrain_noisycorpus import NERv1_PRE
+from vocabulary import Vocabulary
+from stud.ner_pretrain_noisycorpus import NERv1_PRE
 from gensim.models import KeyedVectors
 import torch
 

@@ -1,18 +1,16 @@
 import torch
 import torch.nn as nn
+import numpy as np
 
 from data_loading import *
-from hw1.stud.ner_pretrain_stdbatch import NERv2
+from stud.ner_pretrain_stdbatch import NERv2
 from vocabulary import Vocabulary
 from data_loading import *
 from tqdm import tqdm
 from seqeval.metrics import accuracy_score, f1_score, precision_score, recall_score
 from functools import partial
 from torch.utils.data import DataLoader
-
 from gensim.models import KeyedVectors
-import numpy as np
-
 from configuration import *
 
 # reproducibility stuff

@@ -2,7 +2,7 @@ from typing import List
 from data_loading import *
 from ner_pretrain_noisycorpus import NERv1_PRE
 from rich.progress import track
-from  vocabulary import Vocabulary
+from vocabulary import Vocabulary
 from seqeval.metrics import accuracy_score, f1_score
 from gensim import KeyedVectors
 from configuration import *
